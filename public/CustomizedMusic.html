@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Music - Group 4 Music Streaming Service</title>
+    <link rel="icon" type="image/x-icon" href="./images/logoFavicon.png"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+    <img src = "./images/logoFavicon.png" width="100" height="100" class="center">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="checkoutPage.html">Subscription Plans</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="CustomizedMusic.html">Customized Music</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="userInfo.html">Account</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="summaryPage.html">Community</a>
+                </li>
+            </ul>
+
+            <!-- Autocomplete Search Form -->
+            <form class="d-flex" action="search-results.html" method="GET" onsubmit="return handleSearch()">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query" onkeyup="filterOptions()">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <!-- Dropdown for autocomplete suggestions -->
+                <ul id="suggestions" class="dropdown-menu" style="width: 100%; display: none;"></ul>
+            </form>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h1 style="text-align: center; font-weight: bold;">
+        Your Customized Music:
+    </h1>
+
+    <!-- Example JS and Search Code -->
+    <script>
+        // Example list of music tracks or genres for autocomplete
+        const options = [
+            "Pop", "Rock", "Classical", "Jazz", "Electronic", "Hip-Hop", "R&B", 
+            "Reggae", "Blues", "Indie", "Latin", "Country", "Metal", "Folk"
+        ];
+
+        // Function to filter and show options as you type
+        function filterOptions() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const suggestionsBox = document.getElementById('suggestions');
+            suggestionsBox.innerHTML = '';
+
+            if (input.length > 0) {
+                const filteredOptions = options.filter(option => option.toLowerCase().includes(input));
+                
+                if (filteredOptions.length > 0) {
+                    suggestionsBox.style.display = 'block';
+                    filteredOptions.forEach(option => {
+                        const li = document.createElement('li');
+                        li.classList.add('dropdown-item');
+                        li.textContent = option;
+                        li.onclick = function() {
+                            document.getElementById('searchInput').value = option;
+                            suggestionsBox.style.display = 'none';
+                        };
+                        suggestionsBox.appendChild(li);
+                    });
+                } else {
+                    suggestionsBox.style.display = 'none';
+                }
+            } else {
+                suggestionsBox.style.display = 'none';
+            }
+        }
+
+        // Search handler when submitting the form
+        function handleSearch() {
+            const input = document.getElementById('searchInput').value;
+            if (!input) {
+                alert("Please enter a search query.");
+                return false;  // Prevent form submission if input is empty
+            }
+            return true;  // Allow form submission
+        }
+
+        // Hide suggestions when clicking outside the search bar
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('#searchInput')) {
+                document.getElementById('suggestions').style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>

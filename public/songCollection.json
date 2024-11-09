@@ -1,0 +1,227 @@
+[
+    {
+        "AlbumName": "Future Nostalgia",
+        "artist": "Dua Lipa",
+        "year": 2020,
+        "genre": "Pop",
+        "image": "images/songTitles/levitatingDuaLipa.png"
+    },
+    {
+        "AlbumName": "Too Low for Zero",
+        "artist": "Elton John",
+        "year": 1983,
+        "genre": "Rock",
+        "image": "images/songTitles/imStillStandingEltonJohn.png"
+    },
+   {
+        "AlbumName": "Louder Than Bombs",
+        "artist": "The Smiths",
+        "year": 1987,
+        "genre": "Rock",
+        "image": "images/songTitles/louderthan.jpg"
+    },
+   {
+        "AlbumName": "Blue Banisters",
+        "artist": "Lana Del Rey",
+        "year": 2021,
+        "genre": "Pop",
+        "image": "images/songTitles/blueban.jpg"
+    },
+   {
+        "AlbumName": "Krystal",
+        "artist": "Matt Maltese",
+        "year": 2019,
+        "genre": "Indie Rock",
+        "image": "images/songTitles/krystal.png"
+    },
+   {
+        "AlbumName": "This Old Dog",
+        "artist": "Mac DeMarco",
+        "year": 2017,
+        "genre": "Indie Rock",
+        "image": "images/songTitles/thisold.jpg"
+    },
+   {
+        "AlbumName": "Five Five",
+        "artist": "Pouya",
+        "year": 2018,
+        "genre": "Hip-Hop",
+        "image": "images/songTitles/fivefive.jpg"
+    },
+   {
+        "AlbumName": "Reckless",
+        "artist": "Nav",
+        "year": 2018,
+        "genre": "Rap" ,
+        "image": "images/songTitles/reckless.jpg"
+    },
+   {
+        "AlbumName": "Norman Fucking Rockwell",
+        "artist": "Lana Del Rey",
+        "year": 2019,
+        "genre": "Pop",
+        "image": "images/songTitles/nfr.jpg"
+    },
+   {
+        "AlbumName": "Long. Live. ASAP",
+        "artist": "ASAP Rocky",
+        "year": 2013,
+        "genre": "Rap",
+        "image": "images/songTitles/longlive.jpg"
+    },
+    {
+        "AlbumName": "Abbey Road",
+        "artist": "The Beatles",
+        "year": 1969,
+        "genre": "Pop Rock",
+        "image": "images/songTitles/AbbeyRoad.png"
+    },
+    
+  {
+        "AlbumName": "The Wall",
+        "artist": "Pink Floyd",
+        "year": 1979,
+        "genre": "Progressive Rock",
+        "image": "images/songTitles/TheWall.png"
+    },
+  {
+        "AlbumName": "The Dark Side of the Moon",
+        "artist": "Pink Floyd",
+        "year": 1973,
+        "genre": "Progressive Rock",
+        "image": "images/songTitles/DarkSideOfTheMoon.png"
+    },
+  {
+        "AlbumName": "This Old Dog",
+        "artist": "Mac Demarco",
+        "year": 2017,
+        "genre": "Indie Rock",
+        "image": "images/songTitles/ThisOldDog.png"
+    },
+  {
+        "AlbumName": "Isolation",
+        "artist": "Kali Uchis",
+        "year": 2018,
+        "genre": "R&B, Neo Soul",
+        "image": "images/songTitles/Isolation.png"
+    },
+  {
+        "AlbumName": "Dr. Feelgood",
+        "artist": "Mötley Crüe",
+        "year": 1989,
+        "genre": "Glam Metal, Hard Rock",
+        "image": "images/songTitles/DrFeelgood.png"
+    },
+  {
+        "AlbumName": "Out of the Blue",
+        "artist": "Electric Light Orchestra",
+        "year": 1977,
+        "genre": "Progressive Rock, Symphonic Rock",
+        "image": "images/songTitles/OutOfTheBlue.png"
+    },
+  {
+        "AlbumName": "Californication",
+        "artist": "Red Hot Chili Peppers",
+        "year": 1999,
+        "genre": "Alternative Rock, Funk Rock",
+        "image": "images/songTitles/Californication.png"
+    },
+  {
+        "AlbumName": "Nevermind",
+        "artist": "Nirvana",
+        "year": 1991,
+        "genre": "Grunge, Alternative Rock",
+        "image": "images/songTitles/Nevermind.png"
+    },
+  {
+        "AlbumName": "Back in Black",
+        "artist": "AC/DC",
+        "year": 1980,
+        "genre": "Hard Rock",
+        "image": "images/songTitles/BackInBlack.png"
+    },
+  {
+        "AlbumName": "A Different State of Mind",
+        "artist": "Kid Bloom",
+        "year": 2016,
+        "genre": "Indie Pop, Psychedelic Pop",
+        "image": "images/songTitles/DifferentStateOfMind.png"
+    },
+ {
+        "AlbumName": "Goodbye Yellow Brick Road",
+        "artist": "Elton John",
+        "year": 1973,
+        "genre": "Rock, Pop Rock, Glam Rock",
+        "image": "images/songTitles/GoodbyeYellowBrickRoad.png"
+    },
+ {
+        "AlbumName": "The Definitive Collection",
+        "artist": "Commodores",
+        "year": 2003,
+        "genre": "R&B, Funk, Soul",
+        "image": "images/songTitles/TheDefinitiveCollection.png"
+    },
+ {
+        "AlbumName": "I Love Life, Thank You",
+        "artist": "Mac Miller",
+        "year": 2011,
+        "genre": "Hip Hop, Rap",
+        "image": "images/songTitles/ILoveLifeThankYou.png"
+    },
+ {
+        "AlbumName": "Blue Slide Park",
+        "artist": "Mac Miller",
+        "year": 2011,
+        "genre": "Hip Hop, Rap",
+        "image": "images/songTitles/BlueSlidePark.png"
+    },
+ {
+        "AlbumName": "Watching Movies with the Sound Off",
+        "artist": "Mac Miller",
+        "year": 2013,
+        "genre": "Hip Hop, Rap",
+        "image": "images/songTitles/WatchingMoviesWithTheSoundOff.png"
+    },
+ {
+        "AlbumName": "Swimming",
+        "artist": "Mac Miller",
+        "year": 2018,
+        "genre": "Hip Hop, R&B",
+        "image": "images/songTitles/Swimming.png"
+    },
+ {
+        "AlbumName": "Circles",
+        "artist": "Mac Miller",
+        "year": 2016,
+        "genre": "Hip Hop, R&B, Neo Soul",
+        "image": "images/songTitles/Circles.png"
+    },
+ {
+        "AlbumName": "K.I.D.S.",
+        "artist": "Mac Miller",
+        "year": 2010,
+        "genre": "Hip Hop, Neo Soul",
+        "image": "images/songTitles/TheDivineFeminine.png"
+    },
+    {
+    "AlbumName": "Depression Cherry",
+    "artist": "Beach House",
+    "year": 2015,
+    "genre": "Dream Pop, Indie Pop",
+    "image": "images/songTitles/DepressionCherry.png"
+    },
+    {
+        "AlbumName": "Currents",
+        "artist": "Tame Impala",
+        "year": 2015,
+        "genre": "Psychedelic Pop, Synth-Pop",
+        "image": "images/songTitles/Currents.png"
+    },
+    {
+        "AlbumName": "Saturation",
+        "artist": "BROCKHAMPTON",
+        "year": 2017,
+        "genre": "Hip Hop, Alternative",
+        "image": "images/songTitles/Saturation.png"
+    }
+]
