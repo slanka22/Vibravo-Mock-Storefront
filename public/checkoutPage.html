@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscription Plans - Group 4 Music Streaming Service</title>
-    <link rel="icon" type="image/x-icon" href="./images/logoFavicon.png"> 
+    <link rel="icon" type="image/png" href="./images/Logos/3F8F5373.png">
     <!-- Referenced w3Schools (https://www.w3schools.com/html/html_favicon.asp) -->
     <!-- "Musical note symbol vector icon" by rawpixel is licensed under CC BY 4.0 -->
     <!-- https://freerangestock.com/photos/119650/musical-note-symbol-vector-icon.html -->
@@ -13,7 +13,14 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
-    <img src = "./images/logoFavicon.png" width="100" height="100" class="center">
+    <div class="logo-container d-flex align-items-center justify-content-center mt-3">
+        <a href="index.html">
+<div class="logo-container d-flex align-items-center justify-content-center mt-3">
+    <a href="index.html">
+        <img src="./images/Logos/VibravoEvenNewer.png" alt="Group 4 Logo" class="logo-img">
+    </a>
+</div>        </a>
+    </div>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -26,7 +33,7 @@
                 <a class="nav-link" href="checkoutPage.html">Subscription Plans</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="CustomizedMusic.html">Customized Music</a>
+                <a class="nav-link" href="CustomizedMusic.html">User History</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="userInfo.html">Account</a>
@@ -35,10 +42,6 @@
                 <a class="nav-link" href="summaryPage.html">Community</a>
                 </li>
             </ul>
-            <form class="d-flex" action="search-results.html" method="GET">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
             </div>
         </div>
         </nav>
@@ -46,26 +49,71 @@
     <h1 style="text-align: center; font-weight: bold;">
         Subscription Plans Available:
     </h1>
-    <div class="subscription-plan">
-        <div class="card mb-3">
-            <div class="card-body">
-                <h3 class="card-title">Daily Plan</h3>
-                <p class="card-text">You can access unlimited music .</p>
-                <p class="card-text"><strong>Price: $5.99/month</strong></p>
-                <a href="checkoutPage.html" class="btn btn-primary btn-block">Select</a>
+    <div class="container text-center my-5">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 mb-3">
+                <div class="card" style="width: 100%; border: 1px solid #db73b5;">
+                    <div class="card-body">
+                        <h3 class="card-title">Basic Plan</h3>
+                        <p class="card-text">You will have access to all songs and ability to create playlists. This will also let you listen without interruption of ads.</p>
+                        <p class="card-text"><strong>Price: $5.99/month</strong></p>
+                        <a href="checkoutPage.html" class="btn btn-primary btn-block">Select</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="card mb-3">
-            <div class="card-body">
-                <h3 class="card-title">Premium Plan</h3>
-                <p class="card-text">You will have access to custom made playlists, weekly summaries of your listening habits, and access to view what your friends in your community are listening to</p>
-                <p class="card-text"><strong>Price: $9.99/month</strong></p>
-                <a href="checkoutPage.html" class="btn btn-primary btn-block">Select</a>
+            <div class="col-md-4 mb-3">
+                <div class="card" style="width: 100%; border: 1px solid #db73b5;">
+                    <div class="card-body">
+                        <h3 class="card-title">Premium Plan</h3>
+                        <p class="card-text">You will have access to custom made playlists, weekly summaries of your listening habits, and access to view what your friends in your community are listening to.</p>
+                        <p class="card-text"><strong>Price: $9.99/month</strong></p>
+                        <a href="checkoutPage.html" class="btn btn-primary btn-block">Select</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
 </>
 </html>
+<div id="albumCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Album covers will be dynamically added here -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script>
+    fetch('songCollection.json')
+        .then(response => response.json())
+        .then(data => {
+            const carouselInner = document.querySelector('.carousel-inner');
+            let isFirst = true; 
+            
+            data.forEach(album => {
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                if (isFirst) {
+                    carouselItem.classList.add('active');
+                    isFirst = false;
+                }
+
+                carouselItem.innerHTML = `
+                    <img src="${album.image}" class="d-block w-100" alt="${album.AlbumName}">
+                `;
+                
+                carouselInner.appendChild(carouselItem);
+            });
+        })
+        .catch(error => console.error('Error loading album data:', error));
+</script>
+
 </body>
 </html>
